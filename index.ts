@@ -218,9 +218,9 @@ class Player extends Person {
     }
 }
 
-const p = new Player('Valerchik');
+const p = new Player('Valerchik', 'Gomel');
 
-console.log(p.age);
+console.log(p.showAge);
 
 
 // function greet (human: Person) {
