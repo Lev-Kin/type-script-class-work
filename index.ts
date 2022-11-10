@@ -23,7 +23,6 @@
 //     b.toUpperCase();
 // }
 
-
 // let arr: Array<string> = [];
 // let arr2: string[] = [];
 
@@ -55,13 +54,11 @@
 
 // let a: string & number = 2;
 
-
 // type Person = {
 //     name: string;
 //     age: number;
 //     city?: string;
 // };
-
 
 // type Admin = {
 //     puzo: boolean,
@@ -185,25 +182,23 @@
 //     city: string;
 // }
 
-
-
 class Person {
 
     protected age = 0;
     static planet = 'earth';
 
-    constructor (
+    constructor(
         protected readonly name: string,
         city: string
     ) {
-        
+
     }
 
-    showAge () {
+    showAge() {
         console.log(this.age);
     }
 
-    run (destination: string): void {
+    run(destination: string): void {
         console.log(`${this.name} to ${destination}`);
     }
 }
@@ -213,7 +208,7 @@ class Player extends Person {
     //     super(name);
     // }
 
-    play () {
+    play() {
         console.log(`${this.name} plays and his age is ${this.age}`);
     }
 }
@@ -222,9 +217,11 @@ const p = new Player('Valerchik', 'Gomel');
 
 console.log(p.showAge);
 
-
 // function greet (human: Person) {
 //     console.log(`Hi there ${human.name}`)
 // }
+
+
+
 
 
